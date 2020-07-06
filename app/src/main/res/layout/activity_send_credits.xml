@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayoutSendActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.outstarttech.kabir.property.activities.SendCredits"
+    android:theme="@style/AppTheme.NoActionBar">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Credits"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/montb"
+            android:textSize="32sp"
+            android:textColor="@android:color/white"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your"
+                android:fontFamily="@font/montb"
+                android:textSize="20sp"
+                android:textColor="@android:color/darker_gray">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montb"
+                android:textSize="20sp"
+                android:textColor="@color/colorMagenta">
+            </TextView>
+
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/sopfialogocredits"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"
+                    android:text="To Email"/>
+
+                <EditText
+                    android:id="@+id/toAddress"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundempty"
+                    android:textSize="13sp"
+                    android:padding="10dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="Eg (john@email.com)"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@android:color/darker_gray"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="Amount"/>
+
+                <EditText
+                    android:id="@+id/creditAmount"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundempty"
+                    android:textSize="13sp"
+                    android:padding="10dp"
+                    android:inputType="number"
+                    android:hint="1-100000"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@android:color/darker_gray"/>
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/sendTokenButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/circlenotempty"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:text="Send"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

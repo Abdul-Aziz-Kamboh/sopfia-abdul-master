@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.outstarttech.kabir.property.activities.BuySopfia">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Buy Credits"
+        android:fontFamily="@font/montb"
+        android:textSize="32sp"
+        android:textColor="@android:color/white"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your"
+            android:fontFamily="@font/montb"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Value"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montb"
+            android:textSize="20sp"
+            android:textColor="@color/colorMagenta">
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/buySopfiaValue"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter the value...   [100 - 1000]"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/roundempty"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:drawableStart="@drawable/buycreditsiconsize"
+        android:drawablePadding="15dp"/>
+
+    <Button
+        android:id="@+id/buyButtonsopfia"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/montb"
+        android:textSize="16sp"
+        android:background="@drawable/circlenotempty"
+        android:text="Complete Purchase"/>
+
+</LinearLayout>

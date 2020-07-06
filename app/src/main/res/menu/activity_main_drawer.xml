@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/sopfialogo"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/aboutus"
+            android:icon="@drawable/aboutus"
+            android:title="About Us" />
+        <item
+            android:id="@+id/roadmap"
+            android:icon="@drawable/roadmap"
+            android:title="Road Map" />
+
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_setting"
+            android:title="Update Details" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_action_name"
+            android:title="Logout" />
+
+    </group>
+
+</menu>

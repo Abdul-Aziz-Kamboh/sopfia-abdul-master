@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:paddingTop="30dp"
+    android:background="@drawable/ethmnygradbackground"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/app_name"
+        android:layout_height="150dp"
+        android:id="@+id/qrdialogue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="Download"
+            android:background="@drawable/circlenotempty"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btndownload"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:layout_height="30dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="Share"
+            android:background="@drawable/circlenotempty"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btnshare"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>

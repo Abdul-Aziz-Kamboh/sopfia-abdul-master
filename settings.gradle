@@ -1,0 +1,7 @@
+include ':app', ':volley-master'
+include ':symja_android_library-release'
+include ':mathview'
+include ':mathview:MathView'
+include ':app', ':MathView-release'
+include ':app', ':library'
+

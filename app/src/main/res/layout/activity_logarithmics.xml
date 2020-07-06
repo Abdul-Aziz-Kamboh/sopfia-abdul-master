@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.outstarttech.kabir.property.activities.logarithmics.Logarithmics">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Logarithmics"
+        android:fontFamily="@font/montb"
+        android:textSize="32sp"
+        android:textColor="@android:color/white"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your"
+            android:fontFamily="@font/montb"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montb"
+            android:textSize="20sp"
+            android:textColor="@color/colorMagenta">
+        </TextView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:onClick="logcal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/circlenotempty"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:alpha="0.9"
+        android:textColor="@color/md_white"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montb"
+        android:text="Logarithmics Calculator"
+        android:textAllCaps="true"
+        android:textSize="16sp"/>
+
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="@color/colorMagenta"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <Button
+                android:onClick="logarithm"
+                android:id="@+id/logrithm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/circleempty"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.9"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/md_white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montb"
+                android:text="Logarithmics"/>
+
+            <Button
+                android:id="@+id/lawoflog"
+                android:onClick="lawoflog"
+                android:layout_width="match_parent"
+                android:background="@drawable/circleempty"
+                android:layout_height="40dp"
+                android:text=" Laws of Logarithms"
+                
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.9"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/md_white"
+                android:layout_gravity="center"
+                />
+            <Button
+                android:id="@+id/commonlog"
+                android:onClick="commonlog"
+                android:layout_width="match_parent"
+                android:background="@drawable/circleempty"
+                android:layout_height="40dp"
+                android:text=" Common Logarithms"
+                
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.9"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/md_white"
+                android:layout_gravity="center"
+                />
+            <Button
+                android:id="@+id/characterandMantisa"
+                android:onClick="characterandMantisa"
+                android:layout_width="match_parent"
+                android:background="@drawable/circleempty"
+                android:layout_height="40dp"
+                
+                android:text=" Characteristic and Mantisa"
+                
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.9"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/md_white"
+                android:layout_gravity="center"
+                />
+            <Button
+                android:id="@+id/logTable"
+                android:onClick="logTable"
+                android:layout_width="match_parent"
+                android:background="@drawable/circleempty"
+                android:layout_height="40dp"
+                
+                android:text=" Logarithmic Table"
+                
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.9"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/md_white"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/findmantisa"
+                android:onClick="findmantisa"
+                android:layout_width="match_parent"
+                android:background="@drawable/circleempty"
+                android:layout_height="40dp"
+                
+                android:text=" How to find Mantissa"
+                
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.9"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/md_white"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/antilog"
+                android:onClick="antilog"
+                android:layout_width="match_parent"
+                android:background="@drawable/circleempty"
+                android:layout_height="40dp"
+                
+                android:text=" Antilogarithms"
+                
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.9"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/md_white"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/log1025"
+                android:onClick="log1025"
+                android:layout_width="match_parent"
+                android:background="@drawable/circleempty"
+                android:layout_height="40dp"
+                
+                android:text=" Logs from 10 to 24"
+                
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.9"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/md_white"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/log2654"
+                android:onClick="log2654"
+                android:layout_width="match_parent"
+                android:background="@drawable/circleempty"
+                android:layout_height="40dp"
+                
+                android:text=" Logs from 25 to 54"
+                
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.9"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/md_white"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/log5574"
+                android:onClick="log5574"
+                android:layout_width="match_parent"
+                android:background="@drawable/circleempty"
+                android:layout_height="40dp"
+                
+                android:text=" Logs from 55 to 74"
+                
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.9"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/md_white"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/log7599"
+                android:onClick="log7599"
+                android:layout_width="match_parent"
+                android:background="@drawable/circleempty"
+                android:layout_height="40dp"
+                
+                android:text=" Logs from 75 to 99"
+                
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.9"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/md_white"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/anti049"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:onClick="anti049"
+                android:background="@drawable/circleempty"
+                android:layout_height="wrap_content"
+                
+                android:text=" Antilogs from 0 to 49"
+                
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.9"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/md_white"
+                android:layout_gravity="center"
+                />
+            <Button
+                android:id="@+id/anti5099"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:onClick="anti5099"
+                android:background="@drawable/circleempty"
+                android:layout_height="wrap_content"
+                
+                android:text=" Antilogs from 50 to 99"
+                
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.9"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/md_white"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/uselogTable"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:onClick="uselogTable"
+                android:background="@drawable/circleempty"
+                android:layout_height="wrap_content"
+                
+                android:text=" How to use Logrithmic Table"
+                
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.9"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/md_white"
+                android:layout_gravity="center"
+                />
+            
+            
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

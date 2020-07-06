@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayoutDictionary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.outstarttech.kabir.property.activities.Dictionaryclass"
+    android:theme="@style/AppTheme.NoActionBar">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/navigation_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </include>
+
+    <TextView
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Dictionary"
+        android:fontFamily="@font/montb"
+        android:textSize="32sp"
+        android:textColor="@android:color/white"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the"
+            android:fontFamily="@font/montb"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Word"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montb"
+            android:textSize="20sp"
+            android:textColor="@color/colorMagenta">
+        </TextView>
+
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:alpha="0.9"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/roundempty"
+        android:hint="Type your word here..."
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:drawableStart="@drawable/dictionaryiconsize"
+        android:drawablePadding="15dp" />
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/circlenotempty"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:alpha="0.9"
+        android:textColor="@color/md_white"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montb"
+        android:text="Add Word"
+        android:textAllCaps="true"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:alpha="0.9"
+        android:layout_height="40dp"
+        android:background="@drawable/circleempty"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/montb"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/md_white"
+        android:layout_gravity="center"
+        android:text="Words List"
+        android:textAllCaps="true"
+        android:textSize="16sp"/>
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+<com.google.android.material.navigation.NavigationView
+android:id="@+id/drawerDictionary"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/colorBlack"
+    app:itemTextColor="@android:color/white"
+    app:headerLayout="@layout/nav_header_main"
+    app:itemIconTint="@color/colorMagenta"
+    app:itemBackground="@drawable/drawer_item_bg"
+    app:menu="@menu/activity_main_drawer"></com.google.android.material.navigation.NavigationView>
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>

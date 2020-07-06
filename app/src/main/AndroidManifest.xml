@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inventioncore.kabir.sopfia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.codextech.kabir.bills_app.app.Sugar"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.outstarttech.kabir.property.activities.marketplace.Gallery"></activity>
+        <activity android:name="com.outstarttech.kabir.property.activities.Roadmap" />
+        <activity android:name="com.duy.ScientificCal" />
+        <activity android:name="com.outstarttech.kabir.property.activities.SendCredits" />
+        <activity android:name="com.outstarttech.kabir.property.activities.calculator.ScientificCalculator" />
+        <activity android:name="com.outstarttech.kabir.property.activities.calculator.StandardCalculator" />
+        <activity android:name="com.outstarttech.kabir.property.activities.marketplace.MarketPlace" />
+        <activity android:name="com.outstarttech.kabir.property.activities.EthmnyDetail" />
+        <activity android:name="com.outstarttech.kabir.property.activities.CreditsDetail" />
+        <activity android:name="com.outstarttech.kabir.property.activities.Qrcodes" />
+        <activity android:name="com.outstarttech.kabir.property.activities.CustomizeQrcodes" />
+        <activity
+            android:name="com.outstarttech.kabir.property.activities.FingerprintAuthentication"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.outstarttech.kabir.property.activities.ocr.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.outstarttech.kabir.property.activities.ocr.HelpActivity"
+            android:screenOrientation="user">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.ironsource.sdk.controller.ControllerActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name="com.ironsource.sdk.controller.InterstitialActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.ironsource.sdk.controller.OpenUrlActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent" />
+
+
+
+        <activity android:name="com.outstarttech.kabir.property.activities.logarithmics.Logarithmics" />
+        <activity android:name="com.outstarttech.kabir.property.activities.BuySopfia" />
+        <activity android:name="com.outstarttech.kabir.property.activities.Calculations" />
+        <activity android:name="com.outstarttech.kabir.property.activities.WidgetConfigureActivity" />
+        <activity android:name="com.outstarttech.kabir.property.activities.ScientificActivity" />
+        <activity android:name="com.outstarttech.kabir.property.activities.SettingsActivity" />
+        <activity android:name="com.outstarttech.kabir.property.activities.StandardCal" />
+        <activity
+            android:name="com.outstarttech.kabir.property.activities.CodeConfirmation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.outstarttech.kabir.property.activities.ListDataActivity" />
+        <activity android:name="com.outstarttech.kabir.property.activities.EditDataActivity" />
+        <activity android:name="com.outstarttech.kabir.property.activities.CustomQRcodes" />
+        <activity android:name="com.outstarttech.kabir.property.activities.EarnPoints" />
+        <activity android:name="com.outstarttech.kabir.property.activities.logarithmics.antilog99" />
+        <activity android:name="com.outstarttech.kabir.property.activities.logarithmics.antilog00" />
+        <activity android:name="com.outstarttech.kabir.property.activities.logarithmics.log7599" />
+        <activity android:name="com.outstarttech.kabir.property.activities.logarithmics.log5574" />
+        <activity android:name="com.outstarttech.kabir.property.activities.logarithmics.log2554" />
+        <activity android:name="com.outstarttech.kabir.property.activities.logarithmics.log1025" />
+        <activity android:name="com.outstarttech.kabir.property.activities.logarithmics.howToUseLogTable" />
+        <activity android:name="com.outstarttech.kabir.property.activities.logarithmics.antilogrithm" />
+        <activity android:name="com.outstarttech.kabir.property.activities.logarithmics.findMantissa" />
+        <activity android:name="com.outstarttech.kabir.property.activities.logarithmics.LogarithmicTable" />
+        <activity android:name="com.outstarttech.kabir.property.activities.logarithmics.CharacteristicAndMantissa" />
+        <activity android:name="com.outstarttech.kabir.property.activities.logarithmics.CommonLogrithm" />
+        <activity android:name="com.outstarttech.kabir.property.activities.logarithmics.LawsOflLog" />
+        <activity android:name="com.outstarttech.kabir.property.activities.logarithmics.Logarithms" />
+        <activity android:name="com.outstarttech.kabir.property.activities.logarithmics.logCalculator" />
+        <activity
+            android:name="com.outstarttech.kabir.property.activities.Dictionaryclass"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.outstarttech.kabir.property.activities.AlgebraCalculator" />
+        <activity android:name="com.outstarttech.kabir.property.activities.SplashScreen" />
+        <activity
+            android:name="com.outstarttech.kabir.property.activities.BuyTokens"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.outstarttech.kabir.property.activities.SendEth" />
+        <activity android:name="com.outstarttech.kabir.property.activities.SendTokens" />
+        <activity android:name="com.outstarttech.kabir.property.activities.UpdateDetails" />
+        <activity android:name="com.outstarttech.kabir.property.activities.Dashboard" />
+        <activity
+            android:name="com.duy.ncalc.calculator.BasicCalculatorActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+
+        <activity
+            android:name="com.duy.ncalc.unitconverter.UnitCategoryActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/title_activity_unit_converter_acitvity"
+
+            android:launchMode="singleTask" />
+        <activity android:name="com.duy.ncalc.unitconverter.ConverterActivity" />
+        <activity
+            android:name="com.duy.ncalc.settings.SettingsActivity"
+            android:label="@string/title_activity_settings"
+
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.duy.ncalc.geom2d.GeometryDescartesActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+
+            android:label="@string/title_activity_geometry"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.duy.ncalc.calculator.LogicCalculatorActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="com.duy.ncalc.matrix.MatrixCalculatorActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/title_activity_matrix_calculator"
+            android:launchMode="singleTask"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.duy.calculator.symja.activities.SolveEquationActivity" />
+        <activity
+            android:name="com.duy.calculator.symja.activities.SimplifyExpressionActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.duy.calculator.symja.activities.FactorExpressionActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.duy.calculator.symja.activities.DerivativeActivity"
+            />
+        <activity
+            android:name="com.duy.calculator.symja.activities.ExpandAllExpressionActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="com.duy.ncalc.graph.GraphActivity"
+            android:label="@string/title_activity_graph" />
+        <activity
+            android:name="com.duy.ncalc.graph.GraphAddFunction"
+            android:label="@string/add_function"
+
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="com.duy.calculator.history.HistoryActivity"
+            android:label="@string/history"
+
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.duy.ncalc.systemequations.SystemEquationActivity"
+
+            android:label="@string/solve_system_equation"
+
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.duy.calculator.symja.activities.LimitActivity"
+            android:label="@string/limit"
+
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.duy.calculator.symja.activities.IntegrateActivity"
+            android:label="@string/integrate"
+
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.duy.calculator.symja.activities.PrimitiveActivity"
+            android:label="@string/primitive"
+
+            android:launchMode="singleTask" />
+        <activity android:name="com.duy.ncalc.document.info.InfoActivity" />
+        <activity
+            android:name="com.duy.calculator.symja.activities.FactorPrimeActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.duy.calculator.symja.activities.PermutationActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.duy.calculator.symja.activities.ModuleActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="com.duy.calculator.symja.activities.TrigActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.duy.calculator.symja.activities.NumberActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="com.duy.calculator.symja.activities.PiActivity" />
+        <activity android:name="com.duy.ncalc.document.MarkdownDocumentActivity" />
+        <activity
+            android:name="com.duy.calculator.symja.activities.IdeActivity"
+            android:label="@string/ide_mode" />
+        <activity android:name="com.duy.ncalc.document.MarkdownListDocumentActivity" />
+
+
+        <activity
+            android:name="com.outstarttech.kabir.property.activities.SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.simplemobiletools.commons.activities.CustomizationActivity"
+     android:label="@string/customize_colors"
+            android:parentActivityName="com.outstarttech.kabir.property.activities.SettingsActivity" />
+
+        <activity
+            android:name="com.outstarttech.kabir.property.activities.LogInActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity> <!-- Android IronSource SDK/> -->
+
+
+        <service android:name="com.codextech.kabir.bills_app.service.InitService">
+
+            <!-- android:process=":testing"> -->
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.outstarttech.kabir.property.activities.MainScreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.outstarttech.kabir.property.activities.Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

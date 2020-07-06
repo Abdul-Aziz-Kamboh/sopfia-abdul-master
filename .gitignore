@@ -1,0 +1,23 @@
+*.iml
+.gradle
+/local.properties
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.idea/runConfigurations.xml
+.idea/misc.xml
+.idea/kotlinc.xml
+.idea/gradle.xml
+.idea/dbnavigator.xml
+.idea/codeStyles/Project.xml
+.idea/caches/build_file_checksums.ser
+.idea/assetWizardSettings.xml
+.idea/vcs.xml
+
+# Project exclude paths
+/MathView-release/build/
+/symja_android_library-release/build/

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:layout_height="match_parent"
+    android:background="@drawable/bg"
+tools:context="com.outstarttech.kabir.property.activities.AlgebraCalculator">
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Algebra Calculation"
+        android:fontFamily="@font/montb"
+        android:textSize="32sp"
+        android:textColor="@android:color/white"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your"
+            android:fontFamily="@font/montb"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Equation"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montb"
+            android:textSize="20sp"
+            android:textColor="@color/colorMagenta">
+        </TextView>
+
+
+    </LinearLayout>
+
+    <EditText
+    android:id="@+id/equation"
+    android:layout_marginTop="30dp"
+    android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"
+    android:layout_width="fill_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:hint="@string/equation_hint"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/roundempty"
+    android:digits="@string/accepted_values"
+    android:inputType="text"
+    android:paddingLeft="10dp"
+        android:drawableStart="@drawable/algebraiconsize"
+        android:drawablePadding="15dp"/>
+
+    <Button
+        android:id="@+id/ocr"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/montb"
+        android:textSize="16sp"
+        android:background="@drawable/circlenotempty"
+        android:text="Photo Math"/>
+
+    <Button
+        android:id="@+id/solve"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/montb"
+        android:textSize="16sp"
+        android:background="@drawable/circlenotempty"
+        android:text="Solve Equation"/>
+
+<LinearLayout
+    android:id="@+id/wrapper"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#000000"
+    android:alpha="0.8"
+    android:orientation="vertical"
+    >
+</LinearLayout>
+
+<TextView
+    android:id="@+id/error"
+    android:gravity="center"
+    android:textSize="20dp"
+    android:textColor="@color/colorCyan"
+    android:textStyle="bold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    />
+
+</LinearLayout>

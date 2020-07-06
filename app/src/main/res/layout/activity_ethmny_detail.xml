@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context="com.outstarttech.kabir.property.activities.EthmnyDetail">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ETHMNY Details"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/montb"
+        android:textSize="32sp"
+        android:textColor="@android:color/white"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your"
+            android:fontFamily="@font/montb"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montb"
+            android:textSize="20sp"
+            android:textColor="@color/colorMagenta">
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="0dp">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ethmnylogobalance"/>
+
+        <TextView
+            android:id="@+id/tokenUpdated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="00000000"
+            android:fontFamily="@font/montb"
+            android:padding="2dp"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorMagenta"/>
+
+        <Button
+            android:id="@+id/sendEthmnyButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/or"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/circlenotempty"
+            android:fontFamily="@font/montb"
+            android:text="Send Ethmny"
+            android:textAllCaps="true"
+            android:textColor="@color/md_white" />
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_above="@+id/skipLogin"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textColor="@android:color/darker_gray"
+            android:layout_centerHorizontal="true"></TextView>
+
+        <Button
+            android:id="@+id/earnEthmnyButton"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/circleempty"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/md_white"
+            android:layout_gravity="center"
+            android:text="Earn Ethmny"
+            android:fontFamily="@font/montb"
+            android:textAllCaps="true"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

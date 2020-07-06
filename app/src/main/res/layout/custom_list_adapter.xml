@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="horizontal"
+    android:background="@drawable/curveblackbutton"
+    >
+
+    <TextView
+        android:id="@+id/wordId"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7px"
+        android:layout_marginTop="7px"
+        android:gravity="center"
+        android:text="Word"
+        android:textColor="@color/colorMagenta"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/typeId"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7px"
+        android:layout_marginTop="7px"
+        android:textColor="@color/colorMagenta"
+        android:layout_marginRight="4px"
+        android:gravity="center"
+        android:text="Type"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/meaningId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|top"
+        android:text="Meaning"
+        android:textColor="@color/colorMagenta"
+        android:layout_marginTop="7px"
+        android:layout_marginBottom="7px"
+        />
+</LinearLayout>

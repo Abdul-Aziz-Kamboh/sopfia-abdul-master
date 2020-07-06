@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="top|center_horizontal"
+android:orientation="vertical"
+    android:background="@drawable/bg"
+android:id="@+id/layout"
+tools:context="com.outstarttech.kabir.property.activities.CustomizeQrcodes">
+
+
+
+<RelativeLayout
+    android:id="@+id/configViewContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/generate"
+        android:clipToPadding="false"
+        android:fadingEdge="vertical"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_horizontal"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center_horizontal"
+
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="4dp"
+                    android:textColor="@android:color/white"
+                    android:paddingRight="4dp"
+                    android:text="Contents" />
+
+                <EditText
+                    android:id="@+id/contents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:hint="Enter Text Here..."
+                    android:maxLines="3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@android:color/white"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Size (px, includes the margin, width equals to height)" />
+
+
+                <SeekBar
+                    android:id="@+id/size"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="800"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@android:color/white"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Margin (px)" />
+
+
+                <SeekBar
+                    android:id="@+id/margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="50"
+                    android:min="1"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@android:color/white"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Data dot scale (0 &lt; scale &lt; 1.0f)" />
+
+                <SeekBar
+                    android:id="@+id/dotScale"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <CheckBox
+                    android:id="@+id/rounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Rounded data dots" />
+
+                <CheckBox
+                    android:id="@+id/autoColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Automatically pick color from background image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/backColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/roundmagentabuttons"
+                        android:layout_weight="1"
+                        android:text="Pick Background Color" />
+                    <Button
+                        android:id="@+id/clr"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/roundmagentabuttons"
+
+                        android:textColor="@android:color/white"
+                        android:text="Pick Color of Dots"/>
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/colorDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="colorDark"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:visibility="gone"
+                    android:singleLine="true" />
+
+
+
+
+                <EditText
+                    android:id="@+id/colorLight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="colorLight"
+                    android:lines="1"
+                    android:visibility="gone"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:paddingLeft="4dp"
+                    android:textColor="@android:color/white"
+                    android:paddingRight="4dp"
+                    android:text="Background Image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/backgroundImage"
+                        android:layout_width="0dp"
+                        android:background="@drawable/roundmagentabuttons"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/white"
+                        android:text="Background Image" />
+
+                    <Button
+                        android:id="@+id/clearImage"
+                        android:layout_width="0dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/roundmagentabuttons"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="Clear Image" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:paddingLeft="4dp"
+                    android:textColor="@android:color/white"
+                    android:paddingRight="4dp"
+                    android:text="Logo image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/logoImage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/roundmagentabuttons"
+                        android:layout_weight="1"
+                        android:text="Select" />
+
+                    <Button
+                        android:id="@+id/removeLogoImage"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/roundmagentabuttons"
+                        android:text="Clear" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@android:color/white"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="logoMargin (px, margin around the logo, 0 to disable)" />
+
+
+                <SeekBar
+                    android:id="@+id/logoMargin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="10"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@android:color/white"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="logoCornerRadius (px, rounded corners, 0 to disable)" />
+
+
+                <SeekBar
+                    android:id="@+id/logoRadius"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:paddingLeft="4dp"
+                    android:textColor="@android:color/white"
+                    android:paddingRight="4dp"
+                    android:text="logoScale (logoSize=logoScale*innerRenderSize)" />
+
+
+                <SeekBar
+                    android:id="@+id/logoScale"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="10"
+                    />
+
+                <CheckBox
+                    android:id="@+id/whiteMargin"
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:text="White margin on background image" />
+
+                <CheckBox
+                    android:id="@+id/binarize"
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Binarize all" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@android:color/white"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="binarizeThreshold (0 &lt; threshold &lt; 255)" />
+
+
+                <SeekBar
+                    android:id="@+id/binarizeThreshold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="128"
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/resultViewContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:id="@+id/qrcode"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_margin="16dp"
+                        android:scaleType="centerInside" />
+
+                    <Button
+                        android:id="@+id/open"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/roundmagentabuttons"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="Save" />
+
+                    <TextView
+                        android:id="@+id/reedit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="4dp"
+                        android:text="Scroll Up to re-edit the QR code." />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#5a5"
+        android:text="Generate"
+        android:textColor="#fff" />
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>

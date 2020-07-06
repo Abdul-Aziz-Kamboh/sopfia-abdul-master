@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <corners android:radius="2dp" />
+            <stroke
+                android:width="1dip"
+                android:color="#c0c0c0" />
+            <padding
+                android:bottom="4dp"
+                android:left="4dp"
+                android:right="4dp"
+                android:top="4dp" />
+        </shape>
+    </item>
+
+    <item>
+        <bitmap
+            android:layout_width="10px"
+            android:layout_height="10px"
+            android:gravity="left"
+            android:src="@drawable/ic_tenant" />
+    </item>
+
+    <item>
+        <bitmap
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:gravity="right"
+            android:src="@drawable/ic_action_name" />
+    </item>
+</layer-list>

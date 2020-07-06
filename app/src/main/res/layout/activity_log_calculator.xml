@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.outstarttech.kabir.property.activities.logarithmics.logCalculator">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Logarithm Calculator"
+        android:fontFamily="@font/montb"
+        android:textSize="32sp"
+        android:textColor="@android:color/white"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your"
+            android:fontFamily="@font/montb"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montb"
+            android:textSize="20sp"
+            android:textColor="@color/colorMagenta">
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingStart="20dp"
+            android:padding="8dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:drawablePadding="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@drawable/roundempty"
+            android:hint="Enter a number..."
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingStart="20dp"
+            android:padding="8dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:drawablePadding="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@drawable/roundempty"
+            android:hint="Enter a base..."
+            android:inputType="number"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Result"
+            android:fontFamily="@font/montb"
+            android:textColor="@color/colorMagenta"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/res"
+            android:layout_width="250dp"
+            android:layout_margin="20dp"
+            android:textColor="@color/colorMagenta"
+            android:text="0"
+            android:inputType="number"
+            android:fontFamily="@font/montb"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+        />
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:id="@+id/log"
+           android:onClick="log"
+           android:textColor="@android:color/white"
+           android:fontFamily="@font/montb"
+           android:background="@drawable/circleempty"
+           android:text="LOG"/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:id="@+id/antilog"
+           android:background="@drawable/circleempty"
+           android:onClick="antilog"
+           android:textColor="@android:color/white"
+           android:fontFamily="@font/montb"
+           android:text="ANTILOG"/>
+
+
+       <Button
+           android:id="@+id/clear"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:background="@drawable/circleempty"
+           android:onClick="clear"
+           android:textColor="@android:color/white"
+           android:fontFamily="@font/montb"
+           android:text="CLEAR" />
+
+   </LinearLayout>
+
+</LinearLayout>

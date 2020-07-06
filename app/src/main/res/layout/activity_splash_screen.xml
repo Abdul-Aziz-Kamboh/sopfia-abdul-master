@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.outstarttech.kabir.property.activities.SplashScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <Button
+            android:id="@+id/proceed"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/roundedbutton"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Proceed"
+            android:textStyle="bold"
+            android:textSize="20sp">
+
+        </Button>
+        
+
+
+    </RelativeLayout>
+
+</LinearLayout>

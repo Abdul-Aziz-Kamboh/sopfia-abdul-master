@@ -1,0 +1,154 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.inventioncore.kabir.sopfia"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            debuggable true
+        }
+    }
+    lintOptions {
+        abortOnError false
+        disable 'MissingTranslation'
+    }
+}
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+    google()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.json:json:20140107'
+    testImplementation group: 'commons-lang', name: 'commons-lang', version: '2.6'
+    testImplementation group: 'commons-io', name: 'commons-io', version: '2.6'
+    androidTestImplementation group: 'commons-lang', name: 'commons-lang', version: '2.6'
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-intents:3.1.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'design'
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+    }
+
+    androidTestImplementation 'androidx.test:rules:1.1.1', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'design'
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+    }
+
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'design'
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+    }
+    implementation project(':symja_android_library-release')
+    implementation project(':MathView-release')
+
+    implementation 'androidx.annotation:annotation:1.1.0'
+
+    implementation 'androidx.drawerlayout:drawerlayout:1.1.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.0-beta1'
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.6.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'io.github.kobakei:ratethisapp:1.2.0'
+    implementation 'com.sothree.slidinguppanel:library:3.4.0'
+
+    implementation 'com.github.mukeshsolanki:MarkdownView-Android:1.0.4'
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+    implementation 'com.simplecityapps:recyclerview-fastscroll:1.0.18'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.getbase:floatingactionbutton:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.jjoe64:graphview:4.2.2'
+    implementation 'com.github.blackfizz:eazegraph:1.2.2@aar'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'com.github.satyan:sugar:1.5'
+    // Stetho core
+    implementation 'com.facebook.stetho:stetho:1.3.1'
+    //Optional network helper
+    implementation 'com.facebook.stetho:stetho-okhttp:1.3.1'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation project(':volley-master')
+    implementation 'com.mixpanel.android:mixpanel-android:5.4.1'
+    implementation 'de.halfbit:tinybus:3.0.2'
+    implementation 'de.halfbit:tinybus-extensions:3.0.2'
+    implementation 'com.facebook.fresco:fresco:1.5.0'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    implementation 'com.github.amirdew:JSON:v1.0.0'
+    implementation 'com.itextpdf:itextg:5.5.10'
+    api 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.itextpdf.tool:xmlworker:5.5.10'
+    implementation 'org.sufficientlysecure:html-textview:3.6'
+    implementation 'de.codecrafters.tableview:tableview:2.8.0'
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'me.dm7.barcodescanner:zxing:1.9'
+    implementation 'com.google.zxing:core:3.2.1'
+    implementation 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
+
+    implementation 'com.ironsource.sdk:mediationsdk:6.10.2@jar'
+
+    implementation 'com.ironsource.sdk:mediationsdk:6.10.2@jar'
+
+    compile files('libs/json_simple-1.1.jar')
+    implementation 'com.rmtheis:tess-two:6.0.4'
+    compile files('libs/jtar-1.0.4.jar')
+
+    implementation 'com.simplemobiletools:commons:5.22.10'
+    implementation 'me.grantland:autofittextview:0.2.1'
+    implementation 'com.github.SumiMakito:AwesomeQRCode:1.2.0'
+    implementation files('libs/javaluator-3.0.1.jar')
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+
+    implementation 'com.android.billingclient:billing:1.0'
+    implementation 'com.android.billingclient:billing:2.2.1'
+
+    implementation project(':library')
+    implementation 'com.pes.materialcolorpicker:library:1.2.5'
+    implementation 'com.github.yukuku:ambilwarna:2.0.1'
+    implementation 'com.google.android.gms:play-services-vision:10.2.0'
+}

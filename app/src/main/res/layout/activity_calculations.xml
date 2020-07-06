@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+
+    android:background="@drawable/bg"
+    android:padding="20dp"
+    tools:context="com.outstarttech.kabir.property.activities.Calculations">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculations"
+        android:fontFamily="@font/montb"
+        android:textSize="32sp"
+        android:textColor="@android:color/white"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your"
+            android:fontFamily="@font/montb"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montb"
+            android:textSize="20sp"
+            android:textColor="@color/colorMagenta">
+        </TextView>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+
+
+        <LinearLayout
+            android:id="@+id/cardCalculator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/simplecal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="Simple Calculator"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cardScientific"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/scientificcal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:text="Scientific Calculator"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+
+
+        <LinearLayout
+            android:id="@+id/cardAlgebra"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/algebraicon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="Algebra Calculator"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cardLogarithmics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/logicon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:text="Lograthmics"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+
+
+
+        <LinearLayout
+            android:id="@+id/cardTrignomatry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/trignoicon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="Trigonometry"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cardCalculus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/calicon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:text="Calculus"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/cardGraph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/graph"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="Graph"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/solveEquation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/solveeqn"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:text="Solve Equation"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:id="@+id/metrix"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/metrix"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:text="Metrix"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/unitConverter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/converter"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="Unit Converter"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:id="@+id/derivative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/derivative"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="Derivative"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/integrate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/integrate"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:text="Integrate"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:id="@+id/permitive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/permitive"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:text="Permitive"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/limit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/limit"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="Find Limit"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:id="@+id/permutation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/permutation"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="Permutation"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/combination"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/combination"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:text="Combination"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:id="@+id/factorExpression"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/trignoicon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="Factor Expression"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/prime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/prime"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="Prime Factor"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:id="@+id/newton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/newton"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="Newton Binomial Expansion"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/gemtry2d"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/geomtry2d"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="2D Geomatery"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:id="@+id/catalan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/catalan"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="Catalan Number"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/primeNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/prime"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:text="Prime Number"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:id="@+id/divisors"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/devisior"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="Divisors"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fabonacci"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/fibonaci"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:text="Fibonacci Number"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:id="@+id/piNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/pi"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="PI Number"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/trigReduce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/trignoicon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:text="Trigonometry-Reduce"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:id="@+id/trigExpo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/trignoicon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:text="Trigonometry To Exponent"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/systemEqn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/magentaempty"
+            android:layout_weight="1"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/solveeqn"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="Solve System of Equations"
+                android:background="@drawable/notemptygreen"
+                android:fontFamily="@font/montb"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+
+</LinearLayout>
