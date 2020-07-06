@@ -31,7 +31,7 @@
             android:id="@+id/the_clear_animation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/colorMagenta">
+            android:layout_margin="10dp"
             android:orientation="vertical"
             app:cardElevation="4dp">
 

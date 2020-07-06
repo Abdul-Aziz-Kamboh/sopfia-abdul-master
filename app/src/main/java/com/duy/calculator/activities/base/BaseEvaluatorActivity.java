@@ -24,6 +24,8 @@ import android.preference.PreferenceManager;
 import androidx.annotation.CallSuper;
 import androidx.annotation.Nullable;
 import com.google.android.material.textfield.TextInputLayout;
+
+import androidx.cardview.widget.CardView;
 import androidx.core.widget.ContentLoadingProgressBar;
 import androidx.appcompat.widget.AppCompatSpinner;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -78,7 +80,7 @@ public abstract class BaseEvaluatorActivity extends NavDrawerActivity
     protected SharedPreferences mPreferences;
     protected ContentLoadingProgressBar mProgress;
     protected Button mBtnClear, mBtnEvaluate;
-
+    CardView card1;
     protected RecyclerView mResultView;
     private ResultAdapter mResultAdapter;
     private final View.OnKeyListener mFormulaOnKeyListener = new View.OnKeyListener() {
@@ -135,7 +137,9 @@ public abstract class BaseEvaluatorActivity extends NavDrawerActivity
         mBtnEvaluate = findViewById(R.id.btn_solve);
         mInputFormula = findViewById(R.id.edit_input);
         mInputFormula.setOnSuggestionClickListener(this);
+        card1=findViewById(R.id.the_clear_animation);
 
+        card1.setBackgroundResource(R.drawable.magentaempty);
         mProgress = findViewById(R.id.progress_bar);
         mSpinner = findViewById(R.id.spinner);
         mBtnClear = findViewById(R.id.btn_clear);
